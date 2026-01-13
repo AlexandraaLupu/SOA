@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600&family=Spectral:opsz,wght@7..72,600&display=swap");
+
+.orders {
+  display: grid;
+  gap: 18px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #101418;
+}
+
+.orders__form {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 18px;
+  background: linear-gradient(160deg, #fdf4e9, #f1f6f4);
+  border: 1px solid rgba(16, 20, 24, 0.08);
+}
+
+.orders__form input {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(16, 20, 24, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 0.95rem;
+}
+
+.orders__form button {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: none;
+  background: #1f2f2a;
+  color: #fdf8f1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.orders__form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(31, 47, 42, 0.25);
+}
+
+.orders__form button:disabled {
+  background: #8c9a96;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.orders__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.orders__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(16, 20, 24, 0.08);
+  box-shadow: 0 12px 22px rgba(16, 20, 24, 0.08);
+}
+
+.orders__item {
+  margin: 0;
+  font-family: "Spectral", serif;
+  font-size: 1rem;
+}
+
+.orders__meta {
+  margin: 4px 0 0;
+  color: #627173;
+  font-size: 0.85rem;
+}
+
+.orders__id {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f3e5d9;
+  color: #6a3f2a;
+}

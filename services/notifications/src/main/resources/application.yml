@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+spring:
+  application:
+    name: notifications
+  data:
+    redis:
+      host: redis
+      port: 6379
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: notifications
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

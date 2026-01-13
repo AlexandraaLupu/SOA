@@ -1,0 +1,23 @@
+server:
+  port: 8084
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+spring:
+  application:
+    name: worker
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+faas:
+  fn:
+    base-url: http://fn-server:8080
+    app: soa
+    function-name: order-fn

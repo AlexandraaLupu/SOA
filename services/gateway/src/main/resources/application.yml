@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost/keycloak/realms/demo
+          jwk-set-uri: http://keycloak:8080/keycloak/realms/demo/protocol/openid-connect/certs
+
+services:
+  orders:
+    base-url: http://orders:8082
+  users:
+    base-url: http://users:8083

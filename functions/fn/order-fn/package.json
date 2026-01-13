@@ -1,0 +1,11 @@
+{
+  "name": "order-fn",
+  "version": "0.0.1",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "@fnproject/fdk": "^0.0.16",
+    "pg": "^8.14.0",
+    "uuid": "^9.0.1"
+  }
+}

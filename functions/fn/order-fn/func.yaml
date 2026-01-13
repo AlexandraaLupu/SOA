@@ -1,0 +1,17 @@
+schema_version: 20180708
+name: order-fn
+version: 0.0.24
+runtime: node
+build_image: fnproject/node:20-dev
+run_image: fnproject/node:20
+entrypoint: node func.js
+config:
+  PGDATABASE: app
+  PGHOST: 172.17.0.1
+  PGPASSWORD: app
+  PGPORT: "5433"
+  PGUSER: app
+triggers:
+- name: order-fn-http
+  type: http
+  source: /order-fn

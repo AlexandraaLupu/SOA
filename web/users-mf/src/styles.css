@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Playfair+Display:wght@600&display=swap");
+
+.users {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  font-family: "DM Sans", sans-serif;
+  color: #111316;
+}
+
+.users__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: linear-gradient(140deg, #f9f4ee, #eef3f1);
+  border: 1px solid rgba(17, 19, 22, 0.08);
+  box-shadow: 0 12px 20px rgba(17, 19, 22, 0.08);
+}
+
+.users__name {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+
+.users__meta {
+  margin: 4px 0 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #7b5b47;
+}
+
+.users__id {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f0dfd2;
+  color: #6b4a3b;
+}

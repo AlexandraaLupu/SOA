@@ -1,0 +1,72 @@
+{
+  "realm": "demo",
+  "enabled": true,
+
+  "clients": [
+    {
+      "clientId": "demo-client",
+      "name": "Demo Client",
+      "enabled": true,
+      "protocol": "openid-connect",
+
+      "publicClient": true,
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": true,
+
+      "redirectUris": [
+        "http://localhost/*"
+      ],
+      "webOrigins": [
+        "http://localhost"
+      ]
+    }
+  ],
+
+  "users": [
+    {
+      "username": "user1",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "User",
+      "lastName": "One",
+      "email": "user1@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "username": "user2",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "User",
+      "lastName": "Two",
+      "email": "user2@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "username": "user3",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "User",
+      "lastName": "Three",
+      "email": "user3@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo",
+          "temporary": false
+        }
+      ]
+    }
+  ]
+}
